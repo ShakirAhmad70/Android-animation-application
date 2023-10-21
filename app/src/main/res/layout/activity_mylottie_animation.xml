@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MylottieAnimation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llRandomAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/laAnimBtn">
+
+        <TextView
+            android:id="@+id/tvRandomAnim"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/random_animation"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#243AFF"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="#243AFF"
+            app:layout_constraintStart_toStartOf="@id/tvRandomAnim"
+            app:layout_constraintEnd_toEndOf="@id/tvRandomAnim"
+            app:layout_constraintTop_toBottomOf="@id/tvRandomAnim"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/laAnimBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/change_animation"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/laAnim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/laAnim"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/skull"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

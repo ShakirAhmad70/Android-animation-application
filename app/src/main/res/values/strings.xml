@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyAnimation</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="translate">Translate</string>
+    <string name="alpha">Alpha</string>
+    <string name="go_to_lottie_animation">Go To Lottie Animation >>></string>
+    <string name="change_animation">Change Animation</string>
+    <string name="random_animation">Random Animation</string>
+</resources>
